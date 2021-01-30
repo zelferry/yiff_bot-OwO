@@ -8,7 +8,7 @@ bot para yiffs!!
 
 ## preparando a crosta
 
-1- retomeie o `owo.env` para `.env` ou crie um arquivi `.env`.
+1- retomeie o `owo.env` para `.env` ou crie um arquivo `.env`.
 
 2-adicione o **TOKEN** do seu bot no `.env`.
 
@@ -21,7 +21,7 @@ bot para yiffs!!
 ## comandos
 
 > o prefixo do bot e `y/`
->> lara mudar eso ir no config.json
+>> para mudar e so ir no config.json
 
 
 1- `y/yiffy`:ver yiffs! owo
@@ -30,6 +30,5 @@ bot para yiffs!!
 
 > para adiconar novos comandos e so criar um arquino na pasta **commands** terminado em js
 
----
 
 podem usar esse repositório para oq quiserem :3

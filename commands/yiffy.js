@@ -9,6 +9,8 @@ exports.run = async (client, message, args) => {
           .setTitle('❌| não a imagems na minha database')
         return message.channel.send(embed)
       } else {
+       if (!message.channel.nsfw) return message.channel.send(":x: |sorry mais esse canal de texto não tem a função **nsfw** ativada!!");
+
         var randomNumber = Math.floor(Math.random() * yiffy.length)
         
         let embed = new Discord.MessageEmbed()

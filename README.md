@@ -11,6 +11,10 @@ bot para yiffs!!
 1- retomeie o `owo.env` para `.env` ou crie um arquivo `.env`.
 
 2-adicione o **TOKEN** do seu bot no `.env`.
+exemplo`token fictício`:
+```
+TOKEN=ejdbdkdndxhShSj283838
+```
 
 3-inicie o bot...
 
@@ -24,11 +28,12 @@ bot para yiffs!!
 >> para mudar e so ir no config.json
 
 
-1- `y/yiffy`:ver yiffs! owo
+1- `y/yiffy`:ver yiffs! owo(estilo roleta russa)
 
 2- `y/addyiffy <link>`: adiconar yiffs
+3- `y/furry <nsfw, gay>`: imagens furrys(yiffs) 
 
-> para adiconar novos comandos e so criar um arquino na pasta **commands** terminado em js
+> para adiconar novos comandos e so criar um arquino na pasta **commands** terminado em .js
 
 
 podem usar esse repositório para oq quiserem :3

@@ -41,7 +41,7 @@ client.on('message', message => {
     message.channel.send({
   content: "",
   embed: {
-    description: "❌| o comando **"+command+"** não existe",
+    description: "❌ |o comando **"+command+"** não existe",
     color: 16711680
   }
 })

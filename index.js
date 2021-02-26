@@ -15,6 +15,9 @@ const config = require("./config.json");
 const cooldown = new Set()
 var time_cooldown = 4 * 1000
 
+const dbfunc = require("./db.js")
+const db = dbfunc.db
+
 client.on('message', message => {
      if (message.author.bot) return;
      if (message.channel.type == 'dm') return;
@@ -22,7 +25,6 @@ client.on('message', message => {
      if (message.content.startsWith(`<@!${client.user.id}>`) || message.content.startsWith(`<@${client.user.id}>`)) return;
      if (cooldown.has(message.author.id)) {
        message.channel.send({embed: {
-  color: 13893887,
   description: `🔥 hey ${message.author} aguarde 4 segundos para usar outro comando!`
 }});
    } else {
@@ -41,7 +43,7 @@ client.on('message', message => {
     message.channel.send({
   content: "",
   embed: {
-    description: "❌ |o comando **"+command+"** não existe",
+    description: "❌ |o comando **"+command+"** não existe :(",
     color: 16711680
   }
 })
@@ -53,9 +55,11 @@ client.on('message', message => {
 });
 
 client.on("ready", () => {
-  client.user.setActivity("OwO what is?", {
+db.defaults({"all":[]})
+  .write();
+  client.user.setActivity("owo whats this?", {
         type: "WATCHING"
    })
 });
 
-client.login(process.env.TOKEN); 
+client.login(process.env.TOKEN)

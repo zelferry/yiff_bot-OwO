@@ -48,7 +48,7 @@ client.on('message', message => {
   }
 })
 }
-      setTimeout(() => {
+    setTimeout(() => {
        cooldown.delete(message.author.id);
    }, time_cooldown);
 }
@@ -57,9 +57,9 @@ client.on('message', message => {
 client.on("ready", () => {
 db.defaults({"all":[]})
   .write();
-  client.user.setActivity("owo whats this?", {
+  client.user.setActivity("OwO whats this?", {
         type: "WATCHING"
    })
 });
 
-client.login(process.env.TOKEN)
+client.login(process.env.TOKEN);

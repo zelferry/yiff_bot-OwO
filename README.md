@@ -13,7 +13,7 @@ bot para yiffs!!
 2-adicione o **TOKEN** do seu bot no `.env`.
 exemplo`token fictício`:
 ```
-TOKEN=ejdbdkdndxhShSj283838
+TOKEN=HufnTS.ndien_jdbd.JMdhsuenHdpAudM
 ```
 
 3-inicie o bot...
